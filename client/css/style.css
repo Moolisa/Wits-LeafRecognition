@@ -1,0 +1,205 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+
+.row2
+{
+	max-width:1140px;
+	margin:0 auto;
+}
+
+body
+{
+	font-weight: tahoma;
+	color: white;
+}
+
+.hero
+{
+	position: absolute;
+	width:1140px;
+	top:16%;
+	left:5%;
+}
+
+.dynamic
+{
+	position: relative;
+	top:30%;
+}
+
+header
+{
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../img/background.jpg);
+	height:150vh;
+	background-position: center;
+	background-size: cover;
+
+}
+
+h1, 
+h2{
+ 	color: white;
+  }
+
+ p
+ {
+ 	color: white;
+ 	margin-top: 5px;
+ }
+
+ .main-nav
+ {
+ 	list-style: none;
+ 	float: right;
+ 	margin-top: 20px;
+ 	margin-right: 20px;
+ }
+
+ .main-nav li
+ {
+ 	display: inline-block;
+ 	margin-left: 16px;
+ }
+
+ .main-nav li a
+  {
+  	color: white;
+  	text-decoration: none;
+  	font-size: 90%
+  	font-weight:bold;
+
+  }
+
+ .main-nav li a:hover
+ {
+ 	color:#e67e22;
+ 	border-bottom:2px solid #e67e22;
+ 	transition: all 0.5s ease-in; 
+ 	padding: 7px;
+ }
+
+.logo img
+{
+	height: 50px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 7px;
+}
+
+.btn
+{
+	font-size: 20px;
+	border: solid #e67e22;
+	padding: 10px;
+	color:white;
+	text-decoration: none;
+	border-radius: 20px;
+	margin-right: 15px;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active {
+
+  color: #ffffff;
+  background-color: #FA8900;
+  border: none;
+  transition: all 0.5s ease-in;
+}
+
+.button-browse
+{
+	margin-top: 60px;	
+}
+
+.btn-half
+{
+	background-color: #e67e22
+}
+
+.btn-full
+{
+	background-color: #e67e22
+}
+
+
+.classify-button
+{
+	margin-top: 10px;
+}
+
+.btn:focus, .upload-btn:focus{
+  outline: 0 !important;
+}
+
+#fileke{
+  display: none;
+}
+
+.preload {
+	width: 100%;
+	height: 100%;
+	background: #333;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.logo2{
+	width: 500px;
+	height: 70px;
+	margin: 150px auto 50px auto;
+	font-size: 40px;
+	text-shadow: -1px 2px 2px #000;
+	text-align: center; 
+	color: azure;
+}
+
+.loader-frame{
+	width: 70px;
+	height: 70px;
+	margin: auto;
+	position: center;
+}
+
+.loader1, .loader2{
+	position: absolute;
+	border: 5px solid transparent;
+	border-radius: 50%;
+}
+
+.loader1 {
+	width: 70px;
+	height: 70px;
+	border-top: 5px solid azure;
+	border-bottom: 5px  solid azure;
+	animation: clockwisespin 2s linear 3; 
+}
+
+.cancelButton{
+	background-color: #e67e22;
+	height: 200px;
+}
+
+.loader2 {
+	width: 60px;
+	height: 60px;
+	border-left: 5px solid darkorange;
+	border-right: 5px  solid darkorange;
+	animation: anticlockwisespin 2s linear 3; 
+}
+
+@keyframes clockwisespin{
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+
+@keyframes anticlockwisespin{
+	from {transform: rotate(0deg);}
+	to {transform: rotate(-360deg);}
+}
